@@ -1,0 +1,93 @@
+#carousel-example-generic{
+	margin-bottom: 50px;
+}
+.media-body p{
+	line-height: 30px;
+}
+.pull-left img{
+	vertical-align: center;
+	display: block;
+	width: 100%;
+}
+/*汉堡包按钮样式*/
+.navbar-toggle .icon-bar{
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggle.is-active .icon-bar:nth-child(3){
+  opacity: 0;
+}
+
+.navbar-toggle.is-active .icon-bar:nth-child(2){
+  -webkit-transform: translateY(13px) rotate(45deg);
+  -ms-transform: translateY(13px) rotate(45deg);
+  -o-transform: translateY(13px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
+}
+
+.navbar-toggle.is-active .icon-bar:nth-child(4){
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  -o-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.lab_icon{
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  margin-right: 15px;
+  border-radius: 50%;
+  position: relative;
+}
+/*实验室图标及旋转动画*/
+.lab_icon:after{
+  display: block;
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/circle3.png);
+  background-size: 100%;
+  background-color: transparent;
+  -webkit-animation: 3s rot infinite linear;
+  animation: 3s rot infinite linear;
+  border-radius: 100%;
+}
+@-webkit-keyframes rot{
+  from{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+  to{-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@-moz-keyframes rot{
+  from{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+  to{-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@-o-keyframes rot{
+  from{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+  to{-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@keyframes rot{
+  from{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+  to{-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+.lab_icon img{
+  width: 80%;
+}
+h3{
+  line-height: 50px;
+}
+.media-body{
+  font-size: 16px;
+  color: #888;
+}
+.media-body h3{
+  font-size: 20px;
+  color: #333;
+}
+.item{
+	margin-top: 40px;
+}

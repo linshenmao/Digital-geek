@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册-数码极客</title>
+	<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+  <link rel="shortcut icon" href="../img/logo.ico" />
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <script src="../js/jquery.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/index.css">
+  <style>
+    .form-horizontal{
+      margin: 50px auto;
+    }
+    body{
+      background: url(../img/bg.jpg);
+    }
+    .glyphicon-user{
+      color: #fff;
+      font-size: 40px;
+      padding: 15px;
+      border-radius: 50%;
+      background: #000;
+    }
+    .form-group a{
+      color: #000;
+    }
+    .btn-block{
+      background: #000;
+      color: #fff!important;
+    }
+    .msg{
+      text-align: left;
+    }
+    .modal-dialog{
+      width: 340px;
+      margin: 0 auto;
+    }
+    .logo{
+      text-align: center;
+      margin-top: 30px;
+    }
+    .text-left{
+      float: left;
+    }
+    .text-right{
+      float: right;
+    }
+    .len{
+      display: none;
+    }
+    .form-group .form-control{
+      font-size: 12px;
+    }
+  </style>
+  <script src="../js/register.js"></script>
+</head>
+<body>
+
+<a class="logo" href="index.html"><img src="../img/logo1.png"></a>
+<div id="loginModal" class="modal show" style="margin-top: 100px">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="text-center">注册</h3>
+      </div>
+      <div class="modal-body">
+        <form action="" class="form col-md-12 center-block">
+          <div class="form-group">
+            <input type="text" class="form-control input-lg" placeholder="用户名">
+          </div>
+          <p class="msg text-left"></p>
+          <p class="len text-right"><b id="count"></b></p>
+          <div class="form-group">
+            <input type="password" class="form-control input-lg" placeholder="密码6-16位，字母/数字/字符至少两种">
+          </div>
+          <p class="msg"></p>
+          <div class="form-group">
+            <input type="password" class="form-control input-lg" placeholder="确认密码">
+          </div>
+          <p class="msg"></p>
+          <div class="form-group">
+            <button class="btn btn-lg btn-block">注册</button>
+          </div>
+          <div class="form-group">
+            <span><a href="login.html" class="pull-right">登录</a></span>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer"> 
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

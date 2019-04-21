@@ -1,0 +1,54 @@
+p{
+	text-align: left;
+}
+/*底部导航栏*/
+.main_nav_bottom{
+	margin-top: 100px;
+}
+ .bnav{
+	padding: 30px 0;
+}
+ .bnav li{
+	color: #fff;
+}
+ .bnav li a{
+	color: #666;
+}
+ .bnav li a:hover{
+	color: #09f;
+	text-decoration: none;
+}
+.nav-tabs
+{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+.media-body h4{
+	font-weight: bold;
+}
+.media-body h4:hover{
+	cursor: pointer;
+	color: #f00;
+}
+.col-sm-6 p{
+	line-height: 10px;
+	text-align: center;
+}
+
+.P_top{
+	background: url(../img/l.jpg) fixed no-repeat top center;
+	padding: 100px 0;
+	margin-top: -20px;
+}
+.P_top h1{
+	font-size: 40px;
+	color: #fff;
+}
+.container .row p{
+	line-height: 30px;
+}
+.main_nav_bottom p{
+	text-align: center;
+}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数码极客首页</title>
+	<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+	<link rel="shortcut icon" href="../img/logo.ico" />
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/index.js"></script>
+	<style>
+		.load{width: 100%;height: 100%;position: fixed;top:0;left:0;background: #fff;z-index: 9;}
+		.load .pic{width:100px;height:100px;position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;background: url(../img/logo4.png) center center no-repeat;padding: 45px;}
+		.load .pic:after{
+		  display: block;
+		  position: absolute;
+		  content: '';
+		  left: 0;
+		  top: 0;
+		  right: 0;
+		  bottom: 0;
+		  background: url(../img/circle6.png);
+		  background-size: 100%;
+		  background-color: transparent;
+		  -webkit-animation: 2s rot infinite linear;
+		  animation: 2s rot infinite linear;
+		  border-radius: 100%;
+		}
+		@keyframes rot{
+		  from{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+		  to{-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+		}
+	</style>
+<!--   <script>
+    $(function(){
+      var load='<div class="load"><div class="pic"></div></div>';
+      $('body').append(load);
+      setInterval(function(){
+        $('.load').fadeOut(1000);
+      },3000)
+    })
+  </script> -->
+</head>
+<body>
+<!-- 导航栏 -->
+<nav class="navbar navbar-inverse topnav">
+  <div class="container-fluid">
+  <div class="container">
+    <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="../img/logo1.png"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">首页</a></li>
+            <li><a href="evaluation.html">评测</a></li>
+            <li><a href="special.html">精选</a></li>
+            <li><a href="Community.html">社区</a></li>
+            <li><a href="lab.html">实验室</a></li>
+            <li><a href="tryout.html">试用</a></li>
+            <li><a href="about.html">关于我们</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><input type="text" class="form-control sub" placeholder="搜索"></li>
+            <li><a href="" class="glyphicon glyphicon-search"></a></li>
+            <li><a href="login.html">登录</a></li>
+            <li class="reg"><a href="register.html">注册</a></li>
+          </ul>
+        </div>
+  </div> 
+  </div>
+</nav>
+<!-- 幻灯片 -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="../img/n5.jpg" width="100%"></div>
+      <div class="swiper-slide"><img src="../img/n4.jpg" width="100%"></div>
+      <div class="swiper-slide"><img src="../img/n6.jpg" width="100%"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<!-- 评测 -->
+<div class="page-header">
+    <h2 class="idex1">评测 &#x26; 体验</h2>
+</div>
+<div class="container">
+  <!-- <div class="row"> -->
+  <div class="col-sm-6 col-md-6">
+        <a href="#" class="thumbnail ping">
+            <img src="../img/banner4.jpg">
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-6">
+        <a href="#" class="thumbnail ping">
+            <img src="../img/banner5.jpg">
+        </a>
+    </div>
+   <div class="col-xs-6 col-sm-6 col-md-3">
+        <div class="thumbnail ping">
+            <a href="#"><img src="../img/h1.jpg"></a>
+            <span class="caption">
+              <a href="">坚果音箱上手</a>
+            </span>
+        </div>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-3">
+        <div class="thumbnail ping">
+            <a href="#"><img src="../img/h2.jpg"></a>
+            <span class="caption">
+              <a href="">飞利浦Hue上手体验</a>
+            </span>
+        </div>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-3">
+        <div class="thumbnail ping">
+            <a href="#"><img src="../img/h3.jpg"></a>
+            <span class="caption">
+              <a href="">黑豆WiFi智能遥控</a>
+            </span>
+        </div>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-3">
+        <div class="thumbnail ping">
+            <a href="#"><img src="../img/h4.jpg"></a>
+            <span class="caption">
+              <a href="">柔宇MOON体验</a>
+            </span>
+        </div>
+    </div>
+<!-- </div> -->
+</div>
+
+
+<!-- 精选 -->
+<div class="page-header">
+    <h2 class="idex2">精选</h2>
+</div>
+<div class="container">
+	<div class="col-sm-6 col-md-4">
+        <div class="thumbnail ping">
+            <img src="../img/j1.jpg" width="100%">
+            <div class="caption">
+                <h3>一张专辑引发的折腾</h3>
+                <p style="text-align: left;">iOS 上的那些 Hi-Res 播放器</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail ping">
+            <img src="../img/j2.jpg" width="100%">
+            <div class="caption">
+                <h3>小小艺术品</h3>
+                <p style="text-align: left;">微软 Surface Dial 拆解</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail ping">
+            <img src="../img/j3.png" width="100%">
+            <div class="caption">
+                <h3>修复难，难于上青天</h3>
+                <p style="text-align: left;">全新MacBook Pro详细拆解</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail ping">
+            <img src="../img/j4.png" width="100%">
+            <div class="caption">
+                <h3>地表最强！</h3>
+                <p style="text-align: left;">GoPro 5拆解修复教程</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail ping">
+            <img src="../img/j5.jpg" width="100%">
+            <div class="caption">
+                <h3>眼花缭乱</h3>
+                <p style="text-align: left;">真 · 无线耳机一览</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail ping">
+            <img src="../img/j6.jpg" width="100%">
+            <div class="caption">
+                <h3>细节决定成败</h3>
+                <p style="text-align: left;">2017年度智能手表盘点</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 试用报告 -->
+<div class="container">
+  <div class="row">
+  <div class="page-header">
+    <h2 class="idex3">试用报告</h2>
+</div>
+  <div class="col-sm-6 col-md-6">
+        <div class="thumbnail ping">
+            <a href="#"><img src="../img/c6.jpg"></a>
+            <span class="caption">
+              <h4><a href="">十年，真4K时代已来</a></h4>
+              <p>亿格瑞A9蓝光硬盘播放机体验</p>
+            </span>
+        </div>
+   </div>
+   <div class="col-sm-6 col-md-6">
+        <div class="thumbnail ping">
+            <a href="#"><img src="../img/c7.jpg"></a>
+            <span class="caption">
+              <h4><a href="">“微微一动，与众不同”</a></h4>
+              <p>埃微i6HR智能手环体验</p>
+            </span>
+        </div>
+   </div>
+  <div class="col-sm-6 col-md-6">
+        <div class="thumbnail ping">
+            <a href="#"><img src="../img/c2.jpg"></a>
+            <span class="caption">
+              <h4><a href="">体积小巧 做工优秀</a></h4>
+              <p>盯盯拍mini3行车记录仪体验</p>
+            </span>
+        </div>
+   </div>
+   <div class="col-sm-6 col-md-6">
+        <div class="thumbnail ping">
+            <a href="#"><img src="../img/c3.jpg"></a>
+            <span class="caption">
+              <h4><a href="">科学健身减肥</a></h4>
+              <p>好轻mini2智能体脂称来管理</p>
+            </span>
+        </div>
+   </div>
+</div>
+</div>
+
+<!-- 快讯 -->
+<div class="page-header">
+    <h2 class="idex4">极客快讯</h2>
+</div>
+<div class="container">
+  <div class="col-sm-4 col-md-4">
+        <div class="thumbnail ping">
+            <a href="#"><img src="../img/z1.jpg"></a>
+            <span class="caption">
+              <h4><a href="">苹果回应iPhone电池与性能事件</a></h4>
+              <p>承诺提供更换电池服务</p>
+            </span>
+        </div>
+   </div>
+  <div class="col-sm-4 col-md-4">
+        <div class="thumbnail ping">
+            <a href="#"><img src="../img/z2.jpg"></a>
+            <span class="caption">
+              <h4><a href="">首批Rift用户自白：</a></h4>
+              <p>为什么在家玩VR很糟糕</p>
+            </span>
+        </div>
+   </div>
+   <div class="col-sm-4 col-md-4">
+        <div class="thumbnail ping">
+            <a href="#"><img src="../img/z3.jpg"></a>
+            <span class="caption">
+              <h4><a href="">6代GeForce显卡对比：</a></h4>
+              <p>你猜性能提升了多少倍</p>
+            </span>
+        </div>
+   </div>
+</div>
+
+<div class="container">
+<div class="clearfix"></div>
+<div class="media col-md-4 col-sm-6">
+     <a class="pull-left" href="#">
+        <img class="media-object" src="../img/k1.png" 
+        alt="Media Object" width="100">
+     </a>
+     <div class="media-body">
+        <h4 class="media-heading">全新iPad外形曝光</h4>
+        <span>或改用类似iPhone X全面屏</span>
+     </div>
+  </div>
+  <div class="media col-md-4 col-sm-6">
+     <a class="pull-left" href="#">
+        <img class="media-object" src="../img/k2.png" 
+        alt="Media Object" width="100">
+     </a>
+     <div class="media-body">
+        <h4 class="media-heading">谁的效果更胜一筹？</h4>
+       <span>一加5T与iPhone X拍照对决</span> 
+     </div>
+  </div>
+  <div class="media col-md-4 col-sm-6">
+     <a class="pull-left" href="#">
+        <img class="media-object" src="../img/k3.png" 
+        alt="Media Object" width="100">
+     </a>
+     <div class="media-body">
+        <h4 class="media-heading">骁龙835+全面屏</h4>
+        <span>安卓之父仅卖出5万台Essential</span> 
+     </div>
+  </div>
+  <div class="media col-md-4 col-sm-6">
+     <a class="pull-left" href="#">
+        <img class="media-object" src="../img/k4.png" 
+        alt="Media Object" width="100">
+     </a>
+     <div class="media-body">
+        <h4 class="media-heading">2018款诺基亚6获得认证</h4>
+        <span>或成为诺基亚首款全面屏产品</span> 
+     </div>
+  </div>
+  <div class="media col-md-4 col-sm-6">
+     <a class="pull-left" href="#">
+        <img class="media-object" src="../img/k5.png" 
+        alt="Media Object" width="100">
+     </a>
+     <div class="media-body">
+        <h4 class="media-heading">限量发售+高度定制</h4>
+        <span>这些小米手机有望升值</span>
+     </div>
+  </div>
+  <div class="media col-md-4 col-sm-6">
+     <a class="pull-left" href="#">
+        <img class="media-object" src="../img/k6.png" 
+        alt="Media Object" width="100">
+     </a>
+     <div class="media-body">
+        <h4 class="media-heading">新证据出现</h4>
+        <span>微软正在开发Surface Phone？</span>
+     </div>
+  </div>
+</div>
+<!-- 底部导航栏 -->
+<div class="main_nav_bottom" style="margin-bottom:-100px">
+    <nav class="navbar navbar-inverse copyright">
+        <div class="container bnav" align="center">
+            <ul class="nav nav-tabs nav-tabs-justified">
+                <div class="row" align="center">
+                    <div class="col-md-3 col-sm-3 col-xs-3" align="center"><li>业务
+                        <li><a href="#">数码服务</a></li>
+                        <li><a href="#">实验室</a></li>
+                        <li><a href="#">试用中心</a></li>
+                    </li></div>
+                    <div class="col-md-3 col-sm-3 col-xs-3" align="center"><li>极客社区
+                        <li><a href="#">综合讨论</a></li>
+                        <li><a href="#">最新活动</a></li>
+                        <li><a href="#">反馈意见</a></li>
+                    </li></div>
+                    <div class="col-md-3 col-sm-3 col-xs-3" align="center"><li>数码商城
+                        <li><a href="#">全部产品</a></li>
+                        <li><a href="#">服务支持</a></li>
+                        <li><a href="#">以旧换新</a></li>
+                    </li></div>
+                    <div class="col-md-3 col-sm-3 col-xs-3" align="center"><li>关于我们
+                        <li><a href="#">新浪微博</a></li>
+                        <li><a href="#">加入我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </li></div>
+                </div>
+            </ul>
+        </div>
+        <p><img src="../img/logo1.png" width="120px"><br>©2018 数码极客 粤ICP备12018529号</p>
+    </nav>
+</div>
+
+<!-- 回到顶部按钮 -->
+<div id="btn"><i class="glyphicon glyphicon-menu-up"></i></div>
+
+<!-- 幻灯片初始化 -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      effect : 'coverflow',
+      autoHeight: true,
+      autoplay : {
+        delay:3000
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>
+</body>
+</html>
